@@ -33,10 +33,10 @@ app.use((req, res, next) => {
 });
 
 
-app.use((req, res, next) => {
+/* app.use((req, res, next) => {
     //Stop normal rendering by redirecting to maintenance page (example)
     res.render('maintenance.hbs');
-});
+}); */
 
 //app.use is called in order. So move static rendering to make sure these calls are redirected too
 app.use(express.static(__dirname + '/public'));
